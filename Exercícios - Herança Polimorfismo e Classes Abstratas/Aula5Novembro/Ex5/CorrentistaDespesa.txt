@@ -1,0 +1,12 @@
+public static CorrentistaDespesa[] filtraCorrentistasPorDespesas(CorrentistaDespesa[] correntistas) {
+    List<CorrentistaDespesa> filtrados = new ArrayList<>();
+
+    for (CorrentistaDespesa correntista : correntistas) {
+        float despesasMarco = correntista.getDespesasPrevistas().totalizaMes(3).getValor();
+        if (despesasMarco <= correntista.getSaldo()) {
+            filtrados.add(correntista);
+        }
+    }
+
+    return filtrados.toArray(new CorrentistaDespesa[0]);
+}
