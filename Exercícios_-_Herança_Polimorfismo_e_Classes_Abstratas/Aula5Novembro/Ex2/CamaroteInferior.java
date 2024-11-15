@@ -1,4 +1,4 @@
-package Aula5Novembro.Ex2;
+import Aula5Novembro.Ex2.VIP;
 
 public class CamaroteInferior extends VIP {
     private String localizacao;
