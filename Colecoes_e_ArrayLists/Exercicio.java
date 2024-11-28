@@ -7,7 +7,7 @@ public class Exercicio {
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> lista = new ArrayList<>();
         int num;
-        System.out.println("Informe o número que deseja inserir no array (-1 para encerrar)");
+        System.out.println("Informe os números que deseja inserir no array (-1 para encerrar)");
         while (true) {
             num = sc.nextInt();
             if (num == -1) break;
