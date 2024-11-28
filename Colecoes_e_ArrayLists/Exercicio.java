@@ -22,7 +22,7 @@ public class Exercicio {
         System.out.println();
         
         int numBusca;
-        System.out.println("Informe o número que deseja procurar no Array (-1 para encerrar)");
+        System.out.println("Informe os números que deseja procurar no Array (-1 para encerrar)");
         while(true) {
             numBusca = sc.nextInt();
             if (numBusca == -1) break;
